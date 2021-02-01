@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Blogin</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="css/login.css">
+        <link rel="icon" href="images/Capture.PNG" type="image/icon type">
+    </head>
+    <body>
+   <h1>Blogin.</h1>
+        <div class = "vertical"></div>
+        <div class="container">
+            <img src="images/avatar.png" class="avatar"/>
+            <form action="LoginServlet" method="POST">
+                <label for="username">username</label>
+                <input type="text" name="username" pattern="[c-b]{2}[0-9]{6}" maxlength="8" required placeholder="Enter CB number" />
+                <label for="password">Password</label>
+                <input id="password" type="password" name="password" required placeholder="Enter password">
+                <input type="submit" class="button" name="submit" value="Sign In">
+                <div id="log">No Account? <a href="index.html" id="login">Create one</a></div>
+            </form>
+            
+        </div>
+    </body>
+</html>

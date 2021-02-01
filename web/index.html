@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Blog</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="css/signUp.css">
+    </head>
+    <body>
+        <h3>CREATE NEW ACCOUNT</h3>
+        <div class="container-shadow"></div>
+        <div class="container">
+            
+            <div id="sign-up-form">
+                <form id="form" action="UserController" method="POST" enctype="multipart/form-data">
+                    <div class="profile-pic-div">
+                        <img src="images/avatar.png" id="previewPhoto">
+                        <input type="file" id="file" name="photo" size="50" />
+                        <label for="file" id="uploadBtn">Choose Photo</label>
+                    </div>                    
+                    <label for="username">CB Number (only the 6 digits may be entered)</label>
+                    <input type="text" name="username" pattern="[0-9]{6}" maxlength="6" onkeyup="document.getElementById('email').value = 'cb'+this.value+'@students.apiit.lk' " required />
+                    <label for="firstName">First Name</label>
+                    <input type="text" name="firstName"  required />
+                    <label for="lastName">Last Name</label>
+                    <input type="text" name="lastName"  required />
+                    <label for="dob">Date Of Birth</label>
+                    <input type="date" name="dob" required pattern="\d{4}-\d{2}-\d{2}">
+                    <label for="email">Email Address</label>
+                    <input type="text" name="email" id="email" readonly="readonly">
+                    <span id="text"></span>
+                    <label for="password">Password</label>
+                    <input id="password" type="password" name="password"  required onkeyup="checkPass();">
+                    <label for="password0">Re-Enter Password</label>                    
+                    <input id="password0" type="password" name="password0"  required onkeyup="checkPass();">
+                    <span id="confirm-message2" class="confirm-message"></span>
+                    <input type="submit" class="button" name="submit" value="Create Account" onclick="return validate()">
+                    <div id="log">Already a user? <a href="login.html" id="login">Click Here</a></div>
+                </form>
+            </div>
+        </div>
+        <script src="app.js"></script>
+        
+        <script type="text/javascript">
+
+            function validate()
+            {
+                var password = document.getElementById('password').value;
+                var confirmPassword = document.getElementById("password0").value;
+                
+                if (password != confirmPassword)
+                {
+                    alert("Passwords entered do not match!");
+                    return false;
+                }
+                return true;
+            }
+            
+            function checkPass()
+            {
+                var password = document.getElementById('password');
+                var confirm  = document.getElementById('password0');
+                var message = document.getElementById('confirm-message2');
+                
+                var good_color = "#00ff00";
+                var bad_color  = "#ff0000";
+                
+                if(password.value == confirm.value)
+                {
+                    message.style.color           = good_color;
+                    message.innerHTML = "Passwords Match!";
+                }
+                else
+                {
+                    message.style.color = bad_color;
+                    message.innerHTML = "Passwords Do Not Match!";
+                }
+                
+            }
+            
+            function validation()
+            {
+                var form = document.getElementById("form");
+                var email = document.getElementById("email").value;
+                var text = document.getElementById("text");
+
+                var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+                if (email.match(pattern))
+                {
+                    form.classList.add("Valid");
+                    form.classList.remove("Invalid");
+                    text.innerHTML = "Your Email Address is Valid";
+                    text.style.color = "#00ff00";
+                } else
+                {
+                    form.classList.remove("valid");
+                    form.classList.add("Invalid");
+                    text.innerHTML = "Please Enter Valid Email Address";
+                    text.style.color = "#ff0000";
+                }
+                if (email == "")
+                {
+                    form.classList.remove("Valid");
+                    form.classList.remove("Invalid");
+                    text.innerHTML = "";
+                    text.style.color = "#00ff00";
+                }
+            }
+        </script>
+
+    </body>
+    
+</html>

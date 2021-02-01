@@ -1,0 +1,61 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 9, 2020, 9:03:59 AM
+    Author     : Lahiru De silva 
+*/
+
+body {
+    background: black;
+    font-family: "Montserrat", sans-serif;
+    background-color: rgba(0,0,0,0.8);
+}
+.container {
+    position: absolute;
+    width: 700px;
+    height: 250px;
+    left: 28%;
+    color: white;
+    margin-top: 70px;
+    background: #262525;
+}
+form{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+h1{
+    color: white;
+    font-size: 60px;
+    text-align: center;
+}
+h2{
+    color: white;
+    text-align: center;
+}
+hr{
+    border: 2px solid white;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+.button{
+    border: none;
+    width: 70%;
+    background: #aaf0d1;
+    color: #2c353e;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-left: 95px;
+    padding: 12px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.button:hover {
+    background: #aaf0d1;
+    box-shadow: 0 0 10px #aaf0d1, 0 0 30px #aaf0d1, 0 0 50px #aaf0d1;
+}

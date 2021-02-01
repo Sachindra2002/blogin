@@ -1,0 +1,191 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 12, 2021, 4:21:09 PM
+    Author     : Lahiru De silva 
+*/
+
+body {
+    background-color: rgba(0,0,0,0.8);;
+}
+
+#home{
+    position: relative;
+    margin: 7% auto;
+    height: 500px;
+    width: 700px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+
+
+
+}
+
+#leftbox{
+    Position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 400px;
+    height: 500px;
+
+
+}
+
+#rightbox{
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 360px;
+    height: 500px;
+    background-color: lightgray;
+}
+
+
+
+#button1{
+    Position: center;
+    font-family: verdana;
+    background-color: coral;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    width: 220px;
+    height: 36px;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 500;
+    transition: 0.2s ease;
+    cursor: pointer;
+    opacity: 1;
+}
+
+button1:hover{
+    opacity: 0.7;
+}
+
+
+.or
+{
+    position: absolute;
+    top: 200px;
+    left: 320px;
+    width: 40px;
+    height: 40px;
+    background: #efefef;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    line-height: 40px;
+    text-align: center;
+}
+
+h2 {
+    color: black;
+    text-align: left;
+    font-family: sans-serif;
+
+}
+h3{
+    text-align: center;
+    font-family: sans-serif;
+    margin-top: 50px;
+    font-size: 15px;
+
+
+}
+
+#login{
+
+    font-family: verdana;
+    background-color: coral;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    width: 220px;
+    height: 36px;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 500;
+    transition: 0.3s;
+    cursor: pointer;
+    opacity: 1; 
+
+
+}
+
+#login:hover{
+    opacity: 0.7;
+}
+
+
+
+h1{
+    color: black;
+    text-align: center;
+    font-family: sans-serif;
+
+}
+
+#register{
+    position: relative;
+    font-family: verdana;
+    background-color: coral;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    width: 220px;
+    height: 36px;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 500;
+    transition: 0.2s ease;
+    cursor: pointer;
+    opacity: 1;
+
+}
+#register:hover{
+    opacity: 0.7;
+}
+
+#contactUs{
+    position: relative;
+    font-family: verdana;
+    background-color: darkgray;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    width: 220px;
+    height: 36px;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 500;
+    transition: 0.2s ease;
+    cursor: pointer;
+    opacity: 1;
+}
+
+#contactUs:hover{
+    opacity: 0.7;
+}
+
+.site-footer{
+
+    padding:10px 0 20px;
+    font-size:15px;
+    line-height:24px;
+    color:#737373;
+    text-align: right
+}
+
+

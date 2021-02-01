@@ -1,0 +1,52 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 18, 2020, 10:05:58 AM
+    Author     : Sachindra Rodrigo
+*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+
+
+body {
+    background: rgba(0,0,0,0.8);
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+}
+h3{
+    text-align: center;
+    margin-top: 65px;
+    font-size: 35px;
+    letter-spacing: 1px;
+    color: white;
+}
+.container {
+    position: absolute;
+    width: 525px;
+    height: 300px;
+    left: 50%;
+    margin-left: -262.5px;
+    margin-top: 80px;
+    background: #262525;
+    box-shadow: 0px 0px 50px -20px #000;
+}
+
+.button{
+    border: none;
+    width: 70%;
+    background: coral;
+    color: #2c353e;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-left: 75px;
+    padding: 12px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.button:hover {
+    background: #aaf0d1;
+    box-shadow: 0 0 10px #aaf0d1, 0 0 30px #aaf0d1, 0 0 50px #aaf0d1;
+}

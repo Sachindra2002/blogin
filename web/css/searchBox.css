@@ -1,0 +1,30 @@
+.search-box{
+    
+}
+
+
+.search-box input{
+    background: white;
+    margin-left: 10px;
+    border: coral;
+    text-align: center;
+    padding: 5px 50px;
+    flex: 1;
+    height: auto;
+    outline: coral;
+    
+}
+#box{
+    margin-top: 20px;
+     margin-left: 520px;
+}
+.search-box button{
+    padding: 5px 7px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    margin-right: 6px;
+    background: #ddd;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,130 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 7, 2020, 10:56:42 AM
+    Author     : Lahiru De silva 
+*/
+
+body {
+  margin: 0;
+  font-family:sans-serif;
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+h1{
+    text-align: center;
+    color: black;
+    font-size: 40px;
+}
+
+
+
+h2{
+    color: white;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 210px;
+  background-color: #f1f1f1;
+  position: absolute;
+  height: 100%;
+  overflow: auto;
+}
+
+
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #262525;
+  color: coral;
+}
+
+.sidebar .dropdown-btn.active{
+    background-color: #262525;
+    color: coral;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+
+.sidebar a, .dropdown-btn {
+    display: block;
+    background: #f1f1f1;
+    padding: 10px 15px;
+    width: 200px;
+    color: #333;
+    text-decoration: none;
+    -webkit-transition: 0.2s linear;
+    -moz-transition: 0.2s linear;
+    -ms-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    transition: 0.2s linear;
+  
+}
+
+
+  
+
+/* On mouse-over */
+.sidebar a:hover, .dropdown-btn:hover {
+  background: #f8f8f8;
+  color: #515151;
+  
+  
+}
+
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+ 
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 19px;
+  
+} 
+
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}

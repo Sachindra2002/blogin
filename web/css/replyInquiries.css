@@ -1,0 +1,90 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 16, 2020, 10:31:06 PM
+    Author     : Lahiru De silva 
+*/
+
+body {
+    background-color: #444442;
+    padding-top: 85px;
+}
+
+h2{
+    padding-top: 40px;
+    text-align: center;
+    color: black;
+}
+
+.container{
+    position: relative;
+    margin: 5%;
+    margin-top: 80px;
+    left: 29%;
+    height: 600px;
+    width: 650px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+.form{
+    padding: 20px 10px 10px 10px ;
+    height: 400px;
+    width: 350px;
+    margin-top: 40px;
+    margin-left: 140px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=email], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textArea[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.button{
+    font-family: verdana;
+    background-color: darkgray;
+    margin-top: 10px;
+    margin-left: 40px;  
+    width: 80%;
+    height: 36px;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 500;
+    transition: 0.3s;
+    cursor: pointer;
+    opacity: 1; 
+}
+.button:hover{
+     opacity: 0.7;
+}

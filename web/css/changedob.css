@@ -1,0 +1,91 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 18, 2020, 6:15:39 PM
+    Author     : Sachindra Rodrigo
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+
+
+body {
+    background: black;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+}
+h3{
+    text-align: center;
+    margin-top: 65px;
+    font-size: 35px;
+    letter-spacing: 1px;
+    color: white;
+}
+.container {
+    position: absolute;
+    width: 525px;
+    height: 300px;
+    left: 50%;
+    margin-left: -262.5px;
+    margin-top: 80px;
+    background: linear-gradient(90deg, #29323c 0%, #3b4249 100%);
+    box-shadow: 0px 0px 50px -20px #000;
+}
+
+.button{
+    border: none;
+    width: 70%;
+    background: #aaf0d1;
+    color: #2c353e;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-left: 75px;
+    padding: 12px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.button:hover {
+    background: #aaf0d1;
+    box-shadow: 0 0 10px #aaf0d1, 0 0 30px #aaf0d1, 0 0 50px #aaf0d1;
+}
+input {
+    width: 70%;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: transparent;
+    padding: 10px 20px;
+    border: none;
+    border-bottom: 2px solid #1d2124;
+    outline: none;
+    box-sizing: border-box;
+    margin-left: 70px;
+    margin-bottom: 10px;
+}
+
+input:active,
+input:focus {
+    border-bottom: 0.12em solid #aaf0d1;
+    border-color: #aaf0d1;
+    box-shadow: 0 5px 5px -5px #aaf0d1;
+}
+label {
+    color: white;
+    text-transform: uppercase;
+    padding: 13px 20px;
+    margin-left: 50px;
+    position: relative;
+    display: block;
+    font-size: 14px;
+    margin-top: 50px;
+}
+.text{
+    text-align: center;
+    color: white;
+    margin-top: 15px;
+    font-size: 20px;
+}
