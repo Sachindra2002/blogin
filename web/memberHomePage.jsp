@@ -27,7 +27,7 @@
 
         </c:url> 
 
-        <img src="images/home.png" style="margin-left: 650px;" width="150px">
+        <img src="images/home.png" style="margin-left: 700px;" width="150px">
         <div class="topnav" id="mytopnav">
             <a href="HomeRedirect" class="active">Home</a>
             <a href = changeToBlogger.jsp id=post>Post Blog</a>
