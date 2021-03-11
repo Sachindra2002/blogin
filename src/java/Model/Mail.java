@@ -20,8 +20,8 @@ import javax.mail.internet.MimeMessage;
  */
 public class Mail {
 
-    private final String companyEmail = "thebloginofficial@gmail.com"; //company email
-    private final String companyPassword = "blogin123"; //email password
+    private final String companyEmail = "COMPANY_EMAIL"; //company email
+    private final String companyPassword = "EMAIL_PASSWORD"; //email password
     private final String gmailHost = "smtp.gmail.com"; //google smtp mail server
     private Properties propertyFile;
     private Session theSession;
